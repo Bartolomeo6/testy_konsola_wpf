@@ -1,0 +1,28 @@
+﻿<Window x:Class="zadanieSlowo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:zadanieSlowo"
+        mc:Ignorable="d"
+        Title="Zadanie slowo 18.03.2025" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Podaj slowo: " FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        <TextBox x:Name="podaneSlowo" Grid.Column="1" Width="200" Height="50"></TextBox>
+
+        <Button Click="bezPowtorzen_Click" Grid.Row="1" Width="150" Height="50">Bez powtórzeń</Button>
+        <Label x:Name="slowoBezPowt" Grid.Row="1" Grid.Column="1"></Label>
+
+        <Button Click="ileSamoglosek_Click" Grid.Row="2" Width="150" Height="50">Ile samogłosek</Button>
+        <Label x:Name="ileSamoglosekWString" Grid.Row="2" Grid.Column="1"></Label>
+    </Grid>
+</Window>
